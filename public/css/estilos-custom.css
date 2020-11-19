@@ -1,0 +1,19 @@
+#container-login{
+    background-image: url(../assets/login-register.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.h-600{
+    height: 600px;
+}
+.text-14{
+    font-size: 14px;
+}
+.text-11{
+    font-size: 11px;
+}
+.h-box-chat{
+    height: 550px;
+     /* calc(100% - 181px); */
+}

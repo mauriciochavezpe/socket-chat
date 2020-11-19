@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/estilos-custom.css">
+    <link rel="stylesheet" href="css/final.css">
+</head>
+
+<body class="">
+    <div class="bg-gray-100">
+        <div class="grid grid-cols-3">
+            <div class="col-span-1 bg-white">
+                <div class="search">
+                    <h2 class="text-center">Chats</h2>
+                </div>
+                <div class="mt-3 border border-b-0 px-3 py-2">
+                    <div class="w-full">
+                        <input class="border w-full px-4 py-2 rounded-full h-10" placeholder="buscar chat" type="text">
+                    </div>
+                </div>
+                <div class="h-600 relative overflow-hidden">
+                    <ul id="listaContactos" class="h-screen overflow-scroll overflow-x-hidden">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="mt-20">
+                    <ul class="px-20 flex flex-col" id="divChatbox">
+                        <!--chat Row -->
+                        <!-- other w-2/4 -->
+                        <li class="w-full my-1 flex">
+                            <div class=" min-w-0 max-w-sm border flex flex-col rounded-2xl">
+                                <div class="text-14 w-full pt-2 px-2 break-words">Lorem Ipsum is simply dummy text of
+                                    the printing &
+                                    type
+                                    setting industry.</div>
+                                <div class="text-11 m-2 self-end">10:56 AM</div>
+                            </div>
+                        </li>
+                        <!-- I -->
+                        <li class=" w-full my-1 flex justify-end">
+                            <div class="min-w-0 max-w-sm border flex flex-col rounded-2xl">
+                                <div class="text-14 w-full pt-2 px-2 break-words">Lorem Ipsum is simply dummy text
+                                </div>
+                                <div class="text-11 m-2 self-end">10:56 AM</div>
+                            </div>
+                        </li>
+                        <li class=" w-full my-1 flex">
+                            <div class=" min-w-0 max-w-sm border flex flex-col rounded-2xl">
+                                <div class="text-14 w-full pt-2 px-2 break-words">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum aliquid
+                                    assumenda! Consequuntur nulla dolor culpa! Perferendis ab explicabo aperiam at sunt
+                                    veritatis consequuntur quae, minima accusantium quia distinctio perspiciatis?
+                                </div>
+                                <div class="text-11 m-2 self-end">10:56 AM</div>
+                            </div>
+                        </li>
+                        <li class=" w-full my-1 flex">
+                            <div class=" min-w-0 max-w-sm  border flex flex-col rounded-2xl">
+                                <div class="text-14 w-full pt-2 px-2 break-words">
+                                    Lorem
+                                </div>
+                                <div class="text-11 m-2 self-end">10:56 AM</div>
+                            </div>
+                        </li>
+                        <li class=" w-full my-1 flex">
+                            <div class=" min-w-0 max-w-sm  border flex flex-col rounded-2xl">
+                                <div class="text-14 w-full pt-2 px-2 break-words">
+                                    .
+                                </div>
+                                <div class="text-11 m-2 self-end">10:56 AM</div>
+                            </div>
+                        </li>
+                        <li class=" w-full my-1 flex justify-end">
+                            <div class="min-w-0 max-w-sm border flex flex-col rounded-2xl">
+                                <div class="text-14 w-full pt-2 px-2 break-words">Lorem Ipsum is simply dummy text
+                                </div>
+                                <div class="text-11 m-2 self-end">10:56 AM</div>
+                            </div>
+                        </li>
+                        <!--chat Row -->
+                        <!-- 
+                                <li class="reverse">
+                                <div class="chat-content">
+                                    <h5>Steave Doe</h5>
+                                    <div class="box bg-light-inverse">It’s Great opportunity to work.</div>
+                                </div>
+                                <div class="chat-img"><img src="assets/images/users/5.jpg" alt="user" /></div>
+                                <div class="chat-time">10:57 am</div>
+                            </li> -->
+
+
+                    </ul>
+                </div>
+                <div class="absolute bottom-0 w-2/3">
+                    <div class="h-16  w-full flex items-center content-center border bg-gray-200">
+                        <form id="formEnviar" class=" w-full">
+                            <div class="grid grid-cols-8">
+                                <div class="col-span-1">
+                                    <div class="m-2 flex justify-around align-center">
+                                        <div>
+                                            <button onclick="javascript:void(0)" type="submit" class="">
+                                                <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                    </path>
+                                                </svg></button>
+                                        </div>
+                                        <div>
+                                            <button type="submit" class=""><svg class="w-6 h-6" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg></button>
+                                        </div>
+                                    </div>
+                                    <div class="m-2 flex justify-center align-center">
+                                    </div>
+                                </div>
+                                <div class="col-span-6">
+
+                                    <div>
+                                        <input class="border w-full px-4 py-2 rounded-full h-10" autocomplete="off"
+                                            id="txtMensaje" placeholder="Escribe tu mensaje aquí"
+                                            class="form-control b-0" autofocus>
+                                    </div>
+                                </div>
+                                <div class="col-span-1">
+                                    <div class="m-2 flex justify-center align-center">
+                                        <button type="submit" class="transform rotate-90"><svg class="w-6 h-6"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="socket.io/socket.io.js"></script>
+<script src="./js/socket-room.js"></script>
+<!-- <script src="./js/socket-chat.js"></script> -->
+
+</html>
